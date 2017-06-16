@@ -5,11 +5,7 @@ class Admin::ProductsController < ApplicationController
   before_action :admin_required
 
   def index
-    @products = Product.all
-  end
-
-  def show
-    @product = Product.find(params[:id])
+    @products = Product.all.order("position ASC")
   end
 
   def new
@@ -47,6 +43,18 @@ class Admin::ProductsController < ApplicationController
     @product.destroy
     redirect_to admin_products_path
     flash[:alert] = "已刪除商品"
+  end
+
+  def move_up
+    @product = Product.find(params[:id])
+    @product.move_higher
+    redirect_to :back
+  end
+
+  def move_down
+    @product = Product.find(params[:id])
+    @product.move_lower
+    redirect_to :back
   end
 
   private

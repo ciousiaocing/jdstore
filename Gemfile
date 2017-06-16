@@ -33,6 +33,7 @@ gem 'font-awesome-rails'
 gem 'awesome_rails_console'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'acts_as_list'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
