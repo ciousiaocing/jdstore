@@ -35,6 +35,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'acts_as_list'
 gem 'pry'
+gem 'letter_opener', group: :development
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
