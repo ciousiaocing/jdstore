@@ -25,3 +25,18 @@
     </div>
   </div>
 </div>
+
+<div class="text-center" >
+  <div style="background-color: #000;display: inline-block;color: #ff6666;padding: 5px;border-radius: 5px">
+    特價下殺僅剩 <div id="getting-started"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('#getting-started')
+  .countdown("2018/01/01", function(event){
+    $(this).text(
+      event.strftime('%D days %H:%M:%S')
+    );
+  });
+</script>
