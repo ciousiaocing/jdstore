@@ -35,6 +35,8 @@ gem 'acts_as_list'
 gem 'pry'
 gem 'letter_opener', group: :development
 gem 'aasm'
+gem 'rucaptcha'
+gem 'dalli'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
