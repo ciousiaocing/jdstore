@@ -35,3 +35,24 @@ Product.create!(title: "Cherry Keyboard",
   quantity: 5,
   image: open("https://images-cn.ssl-images-amazon.com/images/I/41LN-bXtA7L._AC_UL320_SR320,320_.jpg")
   )
+
+Product.create!(title: "Kodak i2900 Scanner",
+  description: "is2900掃描儀",
+  price: 28000,
+  quantity: 10,
+  image: open("https://images-na.ssl-images-amazon.com/images/I/71OqiDWnCAL._SL1500_.jpg")
+  )
+
+Product.create!(title: "iPad Mini Case",
+  description: "iPad Mini殼",
+  price: 240,
+  quantity: 20,
+  image: open("https://images-na.ssl-images-amazon.com/images/I/81Q4HI3vUoL._SL1500_.jpg")
+  )
+
+Product.create!(title: "Computer/Laptop Rolling Bag",
+  description: "電腦滾動包",
+  price: 2100,
+  quantity: 10,
+  image: open("https://images-na.ssl-images-amazon.com/images/I/41yiTTJKryL.jpg")
+  )
