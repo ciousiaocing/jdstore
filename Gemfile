@@ -39,6 +39,7 @@ gem 'rucaptcha'
 gem 'dalli'
 gem 'impressionist'
 gem 'pay2go'
+gem 'fog'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
