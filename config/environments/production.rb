@@ -83,4 +83,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.active_mailer.default_url_options = { host: 'https://murmuring-ravine-86325.herokuapp.com/' }
+
+  config.active_mailer.delivery_method = :smtp
+  config.active_mailer.smtp_settings = {
+    port:           587,
+    address:        "smtp.mailgun.org",
+    user_name:      ENV["mailgun_user"],
+    password:       ENV["mailgun_secret"],
+    domail:         "sandbox130b29f6fb1240cfa4db8dc2ba9510d6.mailgun.org",
+    authentication: :plain,
+  }
 end

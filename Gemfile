@@ -38,6 +38,7 @@ gem 'aasm'
 gem 'rucaptcha'
 gem 'dalli'
 gem 'impressionist'
+gem 'pay2go'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
