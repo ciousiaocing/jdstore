@@ -35,8 +35,8 @@ gem 'acts_as_list'
 gem 'pry'
 gem 'letter_opener', group: :development
 gem 'aasm'
-gem 'rucaptcha', group: :development
-gem 'dalli', group: :development
+gem 'rucaptcha'
+gem 'dalli'
 gem 'impressionist'
 gem 'pay2go'
 
