@@ -15,7 +15,7 @@
     </div>
     <div> 數量 ： <%= @product.quantity %> </div>
     <div class="product-price"> $ <%= @product.price %></div>
-    <!-- <div>總瀏覽量： <%= @product.impressionist_count(:filter=>:session_hash) %></div> -->
+    <div>總瀏覽量： <%= @product.impressionist_count(:filter=>:session_hash) %></div>
     <div class="pull-right">
       <% if @product.quantity.present? && @product.quantity > 0 %>
       <% else %>
