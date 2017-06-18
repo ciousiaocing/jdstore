@@ -13,6 +13,6 @@ CarrierWave.configure do |config|
     config.fog_directory  = 'ciou-bucket' # 你設定的 bucket name
 
   else
-    config.storage :file
+    config.storage :fog
   end
 end
