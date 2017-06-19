@@ -1,17 +1,20 @@
-<h2>Log in</h2>
+<div style="margin: 20px;">
+  <h2>Log in</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-    <%= rucaptcha_image_tag(alt: 'Captcha') %>
-    <%= rucaptcha_input_tag(class: 'form-control', placeholder: '請輸入驗證碼') %>
-  </div>
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :email, required: false, autofocus: true %>
+      <%= f.input :password, required: false %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <%= rucaptcha_image_tag(alt: 'Captcha') %>
+      <%= rucaptcha_input_tag(class: 'form-control', placeholder: '請輸入驗證碼') %>
+    </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
+    <div class="form-actions">
+      <%= f.button :submit, "Log in" %>
+    </div>
+  <% end %>
 
-<%= render "users/shared/links" %>
+  <%= render "users/shared/links" %>
+
+</div>
