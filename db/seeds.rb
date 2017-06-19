@@ -15,44 +15,70 @@ end
 
 # Initialize Product
 
-Product.create!(title: "QC-35",
-  description: "耳機",
-  price: 2800,
-  quantity: 5,
-  image: open("https://images-cn.ssl-images-amazon.com/images/I/41bVSMLUllL._AC_UL320_SR320,320_.jpg")
+Product.create!(
+  title: "二手鍋",
+  description: "鍋子",
+  price: 550,
+  quantity: 50,
+  image: open("#{Rails.root}/app/assets/images/item_1.jpg")
   )
 
-Product.create!(title: "Iphone7",
-  description: "手機",
-  price: 5000,
-  quantity: 5,
-  image: open("https://images-cn.ssl-images-amazon.com/images/I/51q3gdJGenL._SL800_.jpg")
+
+Product.create!(
+  title: "平底鍋",
+  description: "鍋子",
+  price: 750,
+  quantity: 40,
+  image: open("#{Rails.root}/app/assets/images/item_2.jpg")
   )
 
-Product.create!(title: "Cherry Keyboard",
-  description: "G80-3000鍵盤",
-  price: 2800,
-  quantity: 5,
-  image: open("https://images-cn.ssl-images-amazon.com/images/I/41LN-bXtA7L._AC_UL320_SR320,320_.jpg")
+Product.create!(
+  title: "鐵製茶壺",
+  description: "壺",
+  price: 450,
+  quantity: 45,
+  image: open("#{Rails.root}/app/assets/images/item_3.jpg")
   )
 
-Product.create!(title: "Kodak i2900 Scanner",
-  description: "is2900掃描儀",
-  price: 28000,
-  quantity: 10,
-  image: open("https://images-na.ssl-images-amazon.com/images/I/71OqiDWnCAL._SL1500_.jpg")
+
+Product.create!(
+  title: "茶壺",
+  description: "壺",
+  price: 250,
+  quantity: 25,
+  image: open("#{Rails.root}/app/assets/images/item_4.jpg")
   )
 
-Product.create!(title: "iPad Mini Case",
-  description: "iPad Mini殼",
-  price: 240,
+Product.create!(
+  title: "八角點心盤",
+  description: "盤子",
+  price: 150,
+  quantity: 15,
+  image: open("#{Rails.root}/app/assets/images/item_5.jpg")
+  )
+
+
+Product.create!(
+  title: "點心盤",
+  description: "盤子",
+  price: 80,
+  quantity: 80,
+  image: open("#{Rails.root}/app/assets/images/item_6.jpg")
+  )
+
+Product.create!(
+  title: "木盤",
+  description: "盤子",
+  price: 125,
+  quantity: 15,
+  image: open("#{Rails.root}/app/assets/images/item_7.jpg")
+  )
+
+
+Product.create!(
+  title: "醬油碟",
+  description: "碟子",
+  price: 20,
   quantity: 20,
-  image: open("https://images-na.ssl-images-amazon.com/images/I/81Q4HI3vUoL._SL1500_.jpg")
-  )
-
-Product.create!(title: "Computer/Laptop Rolling Bag",
-  description: "電腦滾動包",
-  price: 2100,
-  quantity: 10,
-  image: open("https://images-na.ssl-images-amazon.com/images/I/41yiTTJKryL.jpg")
+  image: open("#{Rails.root}/app/assets/images/item_8.jpg")
   )

@@ -53,3 +53,62 @@
   font-size: 20px;
   padding-left: 50px;
 }
+
+
+/*===== 商品列表区块设置 ======*/
+.product-box {
+  text-align: center;
+  padding: 0 0 100px 0;
+
+
+  a {
+    color: #666; //连结字体颜色
+  }
+
+  /* 图片-鼠标滑动效果 */
+  a:hover {
+    color: #0070DE !important;
+    img {
+      opacity: 0.75;
+    }
+  }
+
+  /* 按钮 */
+  .btn {
+    background-color: #fff;
+    margin: 0 10px 0 10px;
+  }
+
+  /* 按钮-鼠标效果 */
+  .btn:hover,
+  .btn:focus {
+    color: #0070DE;
+  }
+
+  /* 广告图 */
+  .intro-box {
+    text-align: center;
+
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 1px;
+    }
+  }
+}
+
+/* 商品列表  */
+  .product-items-box {
+    .box {
+      img {
+        width: 100%;
+        margin: 7.5px auto 7.5px auto;
+      }
+    }
+
+    .product-info {
+      text-align: left;
+      line-height: 14px;
+      min-height: 55px;
+    }
+  }

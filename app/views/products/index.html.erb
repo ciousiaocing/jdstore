@@ -1,14 +1,46 @@
-<div class="row">
-  <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(product) do %>
-        <% if product.image.present? %>
-          <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-        <% end %>
-      <% end %>
-      <%= product.title %> $ <%= product.price %>
-    </div>
-  <% end %>
+<div class="product-box">
+  <div class="container">
+    <!--===== 广告图 =====-->
+    <section class="intro-box">
+      <div class="row">
+        <div class="col-md-12">
+          <%= image_tag("products_index_intro.jpg") %><!-- 图片位置 -->
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!--===== 页面路径 & 排序 =====-->
+   <section class="path-sort-box">
+     <!--=== 产品页面路径 ===-->
+     <div class="left-box">
+       <a href="#">JDStore</a>
+     </div>
+   </section>
+
+   <hr>
+
+   <!--===== 商品列表 =====-->
+   <div class="product-items-box">
+     <% @products.each do |product| %>
+       <div class="col-xs-6 col-md-3">
+         <%= link_to product_path(product) do %>
+           <% if product.image.present? %>
+             <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+           <% else %>
+             <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+           <% end %>
+         <% end %>
+         <div class="product-info">
+           <p><%= product.title %></p>
+           <p>$ <%= product.price %></p>
+         </div>
+
+       </div>
+     <% end %>
+   </div>
+
+
+  </div>
 </div>
