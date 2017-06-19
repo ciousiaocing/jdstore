@@ -1,3 +1,168 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*===== 首頁通用設置 =====*/
+.welcome-box {
+  /* 副標題 */
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  /* 短分隔線 */
+  .short-line {
+    background: #0070DE;
+    margin: 15px auto 30px auto;
+    width: 150px;
+    height: 1.5px;
+  }
+
+  /* 按鈕 */
+  .btn-push {
+    background-color: transparent;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); //半透明背景
+    padding: 10px 20px;
+    font-size: 20px;
+
+    /* 顯示特效 */
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* 按鈕-鼠標滑動效果 */
+  .btn-push:hover {
+    background-color: #0070DE;
+    border-color: #0070DE;
+  }
+}
+
+/*===== Intro 首頁-廣告輪播 =====*/
+.intro-box {
+  /*===== 輪播內容 =====*/
+  .item {
+    /* 標題 */
+    h3 {
+      margin-top: -40%; //標題高度
+      font-size: 50px; //文字大小
+      letter-spacing: 5px; //文字間隔
+    }
+
+    /* 內文 */
+    p {
+      font-size: 20px;
+    }
+
+    /* 圖片 */
+    img {
+      width: 100%;
+    }
+  }
+
+  /*===== 換頁按鈕 =====*/
+  .carousel-control {
+    span {
+      margin-top: 145%; //按鈕高度
+      font-size: 50px; //按鈕大小
+    }
+  }
+}
+
+/*===== Story 首頁-品牌故事 =====*/
+.story-box {
+  /* 區塊 */
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 62.5px 50px 62.5px; //區塊間隔
+
+  /* 標題 */
+  h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  /* 內文 */
+  p {
+    color: #333;
+    line-height: 24px;
+    text-align: justify;
+  }
+
+  /* 圖片 */
+  img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  /* 分隔線 */
+  hr {
+    height: 1.5px;
+    background-color: #666;
+  }
+}
+
+/*===== Service 首頁-服務優勢 =====*/
+.service-box {
+  /* 區塊 */
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 25px 62.5px 50px 62.5px; //區塊間隔
+
+  /* 圖片 */
+  img {
+    width: 100px;
+  }
+
+  /*===== 內容區塊 =====*/
+  .box {
+    margin: 0 25px 0 25px;
+
+    /* 標題 */
+    h3 {
+      font-size: 18px;
+    }
+
+    /* 內文 */
+    p {
+      color: #666;
+      line-height: 24px;
+      margin-top: 25px;
+      text-align: justify;
+    }
+  }
+}
+
+/*===== Categories 首頁-商品分類 =====*/
+.categories-box {
+  /* 區塊 */
+  background-color: #fff;
+  text-align: center;
+
+  /* 圖片 */
+  img {
+    width: 300px;
+  }
+
+  /*===== Content 分類內容 =====*/
+  .category-content {
+    padding: 50px 0 0 0;
+
+    /* 標題 */
+    h3 {
+      padding: 20px 0 20px 0;
+      font-size: 18px;
+    }
+
+    /* 內文 */
+    p {
+      padding: 0 62.5px 50px 62.5px;
+      text-align: justify;
+      color: #666;
+    }
+  }
+}

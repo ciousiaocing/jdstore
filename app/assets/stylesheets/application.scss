@@ -16,4 +16,40 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
-@import "font-awesome";
+ @import "font-awesome";
+
+
+
+ /*===== Push 首頁-立即購買 =====*/
+ .push-box {
+   /* 區塊 */
+   text-align: center;
+   padding: 75px 0 0 0;
+   height: 200px;
+   background: image_url("start.jpg") no-repeat scroll top center/ cover; //背景圖片
+ }
+
+ /*===== Navbar 导览列 ======*/
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-default {
+  /* 文字连结 */
+  a {
+    color: #fff !important;
+  }
+
+  /* 连结-鼠标效果 */
+  a:hover,
+  a:active,
+  a:focus {
+    color: #0070DE !important;
+  }
+}
+
+/*===== Logo ======*/
+.logo-box {
+  margin-right: 15px;
+  font-size: 20px;
+  padding-left: 50px;
+}
